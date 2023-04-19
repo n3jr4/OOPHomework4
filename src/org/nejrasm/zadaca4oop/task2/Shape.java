@@ -3,7 +3,7 @@ package org.nejrasm.zadaca4oop.task2;
 public abstract class Shape {
     private final String colour;
 
-    public Shape(final String colour) {
+    protected Shape(final String colour) {
         this.colour = colour;
     }
 
@@ -13,6 +13,6 @@ public abstract class Shape {
 
     @Override
     public final String toString() {
-        return "Colour: {" + this.colour + "}, Area: {" + this.getArea() + "}, Circumference: {" + this.getCircumference()+"}";
+        return "Colour: {" + this.colour + "}, Area: {" + this.getArea() + "}, Circumference: {" + this.getCircumference() + "}";
     }
 }
