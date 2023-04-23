@@ -1,9 +1,16 @@
 package org.nejrasm.zadaca4oop.task1;
 
 public class Duck implements Flight, Swim {
+
+    private Flight flyingBehavior;
+
+    public Duck() {
+        flyingBehavior = new FlyWithWings();
+    }
+
     @Override
     public String fly() {
-        return new Pegasus().fly();
+        return flyingBehavior.fly();
     }
 
     @Override

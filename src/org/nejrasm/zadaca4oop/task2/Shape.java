@@ -3,13 +3,13 @@ package org.nejrasm.zadaca4oop.task2;
 public abstract class Shape {
     private final String colour;
 
-    protected Shape(final String colour) {
+    public Shape(final String colour) {
         this.colour = colour;
     }
 
-    protected abstract double getArea();
+    public abstract double getArea();
 
-    protected abstract double getCircumference();
+    public abstract double getCircumference();
 
     @Override
     public final String toString() {
